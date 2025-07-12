@@ -15,7 +15,9 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
--- git checkout sub
--- git --work-tree build/web add -all
--- git --work-tree build/web commit -m "first posting webapp from git"
--- git push -u origin sub 
+-- fvm flutter build web --base-href /birthday_bash/
+-- cd build/web
+-- git init
+-- git add .
+-- git commit -m "Deploy latest updates"
+-- git push -f https://github.com/sid2710-alt/birthday_bash.git main:sub
